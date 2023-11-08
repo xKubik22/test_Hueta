@@ -15,61 +15,65 @@
         android:layout_marginTop="40dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxWidth="5000dp"
+        android:minWidth="500dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="280dp">
+        tools:layout_editor_absoluteY="288dp">
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxWidth="500dp"
+
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
             android:ems="10"
             android:fontFamily="@font/inknut_antiqua_light"
             android:gravity="center"
             android:hint="Введите E-mail"
-            android:inputType="textEmailAddress"
->
+            android:inputType="textEmailAddress">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="" />
         </com.google.android.material.textfield.TextInputLayout>
-<!--        <EditText-->
-<!--            android:id="@+id/editLogin"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginLeft="40dp"-->
-<!--            android:layout_marginRight="40dp"-->
-<!--            android:autofillHints=""-->
-<!--            android:ems="10"-->
-<!--            android:fontFamily="@font/inknut_antiqua_light"-->
-<!--            android:gravity="center"-->
-<!--            android:hint="@string/login"-->
-<!--            android:inputType="text"-->
-<!--            tools:ignore="MissingConstraints" />-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/editLogin"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginLeft="40dp"-->
+        <!--            android:layout_marginRight="40dp"-->
+        <!--            android:autofillHints=""-->
+        <!--            android:ems="10"-->
+        <!--            android:fontFamily="@font/inknut_antiqua_light"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="@string/login"-->
+        <!--            android:inputType="text"-->
+        <!--            tools:ignore="MissingConstraints" />-->
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
@@ -85,24 +89,23 @@
                 android:layout_height="wrap_content"
                 android:hint="" />
         </com.google.android.material.textfield.TextInputLayout>
-<!--        <EditText-->
-<!--            android:id="@+id/editPassword"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginLeft="40dp"-->
-<!--            android:layout_marginRight="40dp"-->
-<!--            android:ems="10"-->
-<!--            android:fontFamily="@font/inknut_antiqua_light"-->
-<!--            android:gravity="center"-->
-<!--            android:hint="@string/password"-->
-<!--            android:inputType="textPassword"-->
-<!--            app:passwordToggleEnabled="true"-->
-<!--            app:passwordToggleTint="#ffff"-->
-<!--            android:autofillHints="" />-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/editPassword"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginLeft="40dp"-->
+        <!--            android:layout_marginRight="40dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:fontFamily="@font/inknut_antiqua_light"-->
+        <!--            android:gravity="center"-->
+        <!--            android:hint="@string/password"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            app:passwordToggleEnabled="true"-->
+        <!--            app:passwordToggleTint="#ffff"-->
+        <!--            android:autofillHints="" />-->
 
     </LinearLayout>
-
 
     <FrameLayout
         android:layout_width="match_parent"
